@@ -1,0 +1,9 @@
+CREATE TABLE public.acoes
+(
+    id integer NOT NULL DEFAULT nextval('acao_br_id_seq'::regclass),
+    nome character(100) COLLATE pg_catalog."default" NOT NULL,
+    valor numeric NOT NULL,
+    dt_acao character(100) COLLATE pg_catalog."default" NOT NULL,
+    tipo character(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT acao_br_pkey PRIMARY KEY (id)
+)
